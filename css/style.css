@@ -1,0 +1,264 @@
+.boutons {
+  background-color: #9356dc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 30px;
+  text-align: center;
+  border: none;
+  width: 250px;
+  height: 60px;
+  color: white;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(91, 90, 90, 0.4);
+          box-shadow: 0px 0px 5px 1px rgba(91, 90, 90, 0.4);
+  font-size: 18px;
+}
+
+.boutons:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(53, 52, 52, 0.4);
+          box-shadow: 0px 0px 5px 1px rgba(53, 52, 52, 0.4);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+footer {
+  width: 480px;
+  background-color: #353535;
+  color: white;
+}
+
+footer img {
+  width: 80px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 5px;
+}
+
+header {
+  text-align: center;
+}
+
+header .logo {
+  width: 200px;
+}
+
+header .zone-logo {
+  width: 100%;
+  height: 74px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(58, 58, 58, 0.4);
+          box-shadow: 0px 0px 5px 1px rgba(58, 58, 58, 0.4);
+}
+
+/*GENERAL*/
+body {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: white;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* ZONE HAUT*/
+.zone-lieu {
+  background-color: #eaeaea;
+  height: 60px;
+  padding-top: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+}
+
+.icone-lieu {
+  padding-right: 10px;
+}
+
+.zone-explo-menu {
+  padding: 40px;
+  text-align: center;
+  background-color: #f6f6f6;
+  height: 350px;
+}
+
+.zone-explo-menu h1 {
+  font-size: 29px;
+  font-weight: bold;
+}
+
+.zone-explo-menu p {
+  font-size: 22px;
+  font-weight: lighter;
+}
+
+.zone-explo-menu .boutons {
+  margin-top: 30px;
+}
+
+.section-fonctionnement h2 {
+  font-size: 25px;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
+.section-fonctionnement .fonctionnement {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.section-fonctionnement .lien-choix {
+  margin-top: 30px;
+  background-color: #f6f6f6;
+  width: 400px;
+  height: 85px;
+  margin-left: 30px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 9px 5px rgba(201, 200, 200, 0.4);
+          box-shadow: 0px 0px 9px 5px rgba(201, 200, 200, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-fonctionnement .lien-choix:hover {
+  background-color: rgba(111, 0, 142, 0.125);
+}
+
+.section-fonctionnement .lien-choix .numero {
+  background-color: #9356dc;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 20px;
+  margin-left: -15px;
+}
+
+.section-fonctionnement .lien-choix .icone-phone, .section-fonctionnement .lien-choix .icone-list, .section-fonctionnement .lien-choix .icone-resto {
+  font-size: 27px;
+  margin-right: 20px;
+  color: grey;
+}
+
+.section-fonctionnement .lien-choix .icone-phone:hover, .section-fonctionnement .lien-choix .icone-list:hover, .section-fonctionnement .lien-choix .icone-resto:hover {
+  color: #9356dc;
+  font-weight: bold;
+}
+
+.section-fonctionnement .lien-choix a {
+  font-size: 22px;
+  padding-top: 18px;
+}
+
+.section-fonctionnement .lien-choix a:hover {
+  color: black;
+}
+
+.section-restaurants {
+  background-color: #f6f6f6;
+  margin-top: 60px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-restaurants img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.section-restaurants h2 {
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  font-size: 25px;
+}
+
+.section-restaurants h3 {
+  font-size: 20px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: -20;
+}
+
+.section-restaurants p {
+  padding-left: 10px;
+  margin-top: -5px;
+}
+
+.section-restaurants .resto {
+  width: 335px;
+  height: 251px;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.section-restaurants .zone-texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-restaurants .zone-texte .coeurs {
+  margin-top: -19px;
+  padding-right: 20px;
+  font-size: 22px;
+}
+
+.section-restaurants .zone-texte .coeurs .coeur-plein {
+  display: none;
+}
+
+.section-restaurants .zone-texte .coeurs:hover .coeur-plein {
+  display: block;
+  color: #9356dc;
+}
+
+.section-restaurants .zone-texte .coeurs:hover .coeur-vide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
