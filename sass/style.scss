@@ -1,9 +1,9 @@
 @import 'utils/variables';
-@import 'alafrancaise';
 @import "utils/placeholders";
 @import "components/buttons";
 @import "layouts/footer";
 @import "layouts/header";
+@import "pages/alafrancaise";
 
 /*GENERAL*/
 
@@ -183,17 +183,21 @@ a {
 
                 .coeur-plein {
                         display: none;
-                    }
-                &:hover {
-                    .coeur-plein {
+                       
+                    
+                     &:hover {
+                        .coeur-plein {
                         display: block;
                         color: $primary-color;
+                        
                     }
-                    .coeur-vide {
+
+                }
+                .coeur-vide {
                         display: none;
                     }
                 }
-            } 
+            }  /*fin coeur voir linear gradient sur la background + opacity  */
         }
 
 }

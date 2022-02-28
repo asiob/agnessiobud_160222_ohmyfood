@@ -43,7 +43,7 @@ header {
 }
 
 header .logo {
-  width: 200px;
+  width: 269px;
 }
 
 header .zone-logo {
@@ -60,6 +60,41 @@ header .zone-logo {
           align-items: center;
   -webkit-box-shadow: 0px 0px 5px 1px rgba(58, 58, 58, 0.4);
           box-shadow: 0px 0px 5px 1px rgba(58, 58, 58, 0.4);
+}
+
+/*GENERAL*/
+body {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: white;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*CORPS*/
+.menu {
+  /* z index pour faire passer un bloc sur l'image ou position absolue */
+  margin-top: -30px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.menu .top-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .choix-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*GENERAL*/
@@ -241,6 +276,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /*fin coeur voir linear gradient sur la background + opacity  */
 }
 
 .section-restaurants .zone-texte .coeurs {
@@ -253,12 +289,12 @@ a {
   display: none;
 }
 
-.section-restaurants .zone-texte .coeurs:hover .coeur-plein {
+.section-restaurants .zone-texte .coeurs .coeur-plein:hover .coeur-plein {
   display: block;
   color: #9356dc;
 }
 
-.section-restaurants .zone-texte .coeurs:hover .coeur-vide {
+.section-restaurants .zone-texte .coeurs .coeur-plein .coeur-vide {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+
+
+/*GENERAL*/
+body {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: white;
+    font-family: Roboto;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/*CORPS*/
+
+.menu {
+/* z index pour faire passer un bloc sur l'image ou position absolue */
+    margin-top: -30px;
+    background-color: #f6f6f6;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+        .top-titre {
+            display: flex;
+
+        }
+        .choix-menu {
+            display: flex;  
+        }
+
+}
