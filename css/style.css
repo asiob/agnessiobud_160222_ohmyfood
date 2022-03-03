@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 .boutons {
   background-color: #9356dc;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -14,10 +18,10 @@
 }
 
 .boutons:hover {
-  -webkit-box-shadow: 0px 0px 5px 1px rgba(53, 52, 52, 0.4);
-          box-shadow: 0px 0px 5px 1px rgba(53, 52, 52, 0.4);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(36, 36, 36, 0.8);
+          box-shadow: 0px 0px 5px 1px rgba(36, 36, 36, 0.8);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fca6e4), to(#ae81e6));
+  background-image: linear-gradient(#fca6e4, #ae81e6);
 }
 
 footer {
@@ -76,39 +80,9 @@ a {
   color: black;
 }
 
-/*CORPS*/
-.menu {
-  /* z index pour faire passer un bloc sur l'image ou position absolue */
-  margin-top: -30px;
-  background-color: #f6f6f6;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-}
-
-.menu .top-titre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.menu .choix-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/*GENERAL*/
-body {
-  max-width: 480px;
-  margin: 0 auto;
-  padding: 0 auto;
-  background-color: white;
-  font-family: Roboto;
-}
-
-a {
-  text-decoration: none;
-  color: black;
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* ZONE HAUT*/
@@ -230,11 +204,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .section-restaurants img {
@@ -244,13 +225,12 @@ a {
 
 .section-restaurants h2 {
   padding-top: 50px;
-  padding-left: 20px;
   padding-bottom: 20px;
   font-size: 25px;
 }
 
 .section-restaurants h3 {
-  font-size: 20px;
+  font-size: 1.3rem;
   padding-left: 10px;
   padding-top: 15px;
   padding-bottom: -20;
@@ -259,6 +239,7 @@ a {
 .section-restaurants p {
   padding-left: 10px;
   margin-top: -5px;
+  font-size: 14px;
 }
 
 .section-restaurants .resto {
@@ -296,5 +277,183 @@ a {
 
 .section-restaurants .zone-texte .coeurs .coeur-plein .coeur-vide {
   display: none;
+}
+
+/*FOOTER*/
+footer {
+  font-size: 15px;
+  height: 200px;
+}
+
+footer > h3 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 19px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+.fa-utensils, .fa-hands-helping {
+  font-size: 14px;
+  color: white;
+  padding-right: 5px;
+}
+
+/*GENERAL*/
+body {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: white;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*CORPS*/
+main {
+  position: relative;
+}
+
+.zone-logo-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.zone-logo-menu .fa-solid fa-arrow-left {
+  color: black;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  /* z index pour faire passer un bloc sur l'image ou position absolue */
+  position: relative;
+  margin-top: -30px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  z-index: auto;
+}
+
+.menu .surlignage {
+  border: #99E2D0 solid 1px;
+  width: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: -12px;
+}
+
+.menu h2 {
+  padding-left: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+.menu .top-titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .top-titre h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 29px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.menu .top-titre .coeurs {
+  padding-left: 200px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 30px;
+}
+
+.menu .choix-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(133, 132, 132, 0.4);
+          box-shadow: 0px 0px 10px 0px rgba(133, 132, 132, 0.4);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 440px;
+  height: 80px;
+}
+
+.menu .choix-menu h3 {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.menu .choix-menu .texte-platprix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.menu .choix-menu .texte-platprix p {
+  color: grey;
+}
+
+.menu .choix-menu .texte-platprix .prix {
+  font-weight: bold;
+}
+
+.menu .choix-menu .hover-bouton {
+  height: 80px;
+  width: 80px;
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 114px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.menu .choix-menu .hover-bouton .fa-check-circle {
+  color: white;
+  font-size: 30px;
+}
+
+.zone-bouton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 100px;
 }
 /*# sourceMappingURL=style.css.map */
