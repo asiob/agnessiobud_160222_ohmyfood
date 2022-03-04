@@ -1,0 +1,22 @@
+@keyframes RempliDegrade {
+                    0% {
+                        color: white;
+                    }
+
+                    // 25% {
+
+                    //     color: red;
+                    // }
+
+
+                    // 50% {
+
+                    //     color: yellow;
+                    // }
+                    100% {
+
+                    color: $primary-color; 
+                    }
+
+
+}

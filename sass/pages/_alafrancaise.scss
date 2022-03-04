@@ -27,19 +27,23 @@ main {
 
 .zone-logo-menu {
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 
     // .fa-arrow-alt-left {
     //     color: black;
     //     font-size: 1rem;
 
     // }
-    .fa-solid fa-arrow-left {
+    .icone-fleche {
+        padding-right: 80px;
+    }
+    .fa-arrow-left {
         color: black;
         font-size: 25px;
-        // padding-left: -150px;
-        font-family: Arial, Helvetica, sans-serif; 
+        
 
     }
 
@@ -85,6 +89,36 @@ main {
                     font-size: 25px;
                     font-family: Arial, Helvetica, sans-serif;
                     padding-top: 30px;
+                    font-weight: bold;
+                    position: relative;
+                        .coeur-plein {
+                            display: none;
+                            transition: all 0.3s linear ;
+                            position: absolute;
+                            color: $primary-color;
+                            height: 0;
+
+                        }  
+                    
+                        &:hover { 
+                            .coeur-vide {
+                                display: none;
+                            }
+                            .coeur-plein {
+                                display: block;                                
+                                animation-name: RempliDegrade;
+                                animation-duration: 5s;
+                                animation-timing-function: linear;
+                                // animation-delay: 1s;
+                                height: 100%;
+
+                        }
+                        
+                        
+
+
+                }
+                
                 }
         
              
@@ -99,7 +133,11 @@ main {
             margin-bottom: 20px;
             width: 440px;
             height: 80px;
-                
+            justify-content: space-between;
+
+                    .info-menu {
+                        width: 450px;
+                        }
                 
                 h3 {
                     font-size: 20px;
@@ -116,30 +154,40 @@ main {
                     }
                     .prix {
                         font-weight: bold;
+                        // padding-left: 229px;
                     }
                     
                  }  
                  
                  .hover-bouton {
-                    // display: none;
+                    display: none;
                     height: 80px;
                     width: 80px;
                     background-color: $success-color;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: 114px;
+                    // margin-left: 114px;
                     border-top-right-radius: 20px ;
                     border-bottom-right-radius: 20px;
                         
                     .fa-check-circle{
                         color: white;
                         font-size: 30px;
+                        margin-top: 40%;
+                        margin-left: 30%;
                         // display: none;
+                    }
+                   
+                }
+                &:hover {
+                    .hover-bouton {
+                        display: block;
+                    }
+                    .fa-check-circle {
+                    transform: rotate(100deg);
+                    // animation : 
                     }
                 }
                 
-        }
+        } /* fin choix menu*/
 
 }
 
